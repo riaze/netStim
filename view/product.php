@@ -16,59 +16,63 @@
     if($num > 0)
     {
         while($row = $result->fetch(PDO::FETCH_ASSOC))
+        
         {
-           
-            echo '<table class="table table-sm">';
-            echo '<tbody>';
-            echo '<tr>';
-            echo '<td>Mark</td>';
-            echo '<td>'.$row['Marque'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Nom du produit</td>';
-            echo '<td>'.$row['title'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Catégorie</td>';
-            echo '<td>'.$row['Categorie'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Système d&apos;exploitation</td>';
-            echo '<td>'.$row['System dexploitation'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Résolution</td>';
-            echo '<td>'.$row['Resolution'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Ram</td>';
-            echo '<td>'.$row['Ram'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>CPU</td>';
-            echo '<td>'.$row['CPU'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Nombre de coeurs</td>';
-            echo '<td>'.$row['Nombre de coeurs'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Poids</td>';
-            echo '<td>'.$row['Poids'].'</td>';
-            echo '</tr>';
-            echo '<tr>';
-            echo '<td>Couleur</td>';
-            echo '<td>'.$row['Couleur'].'</td>';
-            echo '</tr>';
-        echo '</tbody>';
-        echo '</table>';
+        ?>   
+
+             <table class="table table-sm">
+             <tbody>
+                <tr>
+                    <td>Mark</td>
+                    <td><?php echo $row['Marque']; ?></td>
+                </tr>
+                <tr>
+                    <td>Nom du produit</td>
+                    <td><?php echo $row['Nom_du_produit'];?></td>
+                </tr>
+                <tr>
+                    <td>Catégorie</td>
+                    <td><?php echo $row['Categorie'];?></td>
+                </tr>
+                <tr>
+                    <td>Système d&apos;exploitation</td>
+                    <td><?php echo $row['System dexploitation'];?></td>
+                </tr>
+                <tr>
+                    <td>Résolution</td>
+                    <td><?php echo $row['Resolution'];?></td>
+                </tr>
+                <tr>
+                    <td>Ram</td>
+                    <td><?php echo $row['Ram'];?></td>
+                </tr>
+                <tr>
+                    <td>CPU</td>
+                    <td><?php echo $row['CPU'];?></td>
+                </tr>
+                <tr>
+                    <td>Nombre de coeurs</td>
+                    <td><?php echo $row['Nombre de coeurs'];?></td>
+                </tr>
+                <tr>
+                    <td>Poids</td>
+                    <td><?php echo $row['Poids'];?></td>
+                </tr>
+                <tr>
+                    <td>Couleur</td>
+                    <td><?php echo $row['Couleur'];?></td>
+                </tr>
+           </tbody>
+         </table>
+       <?php
         }
+
     }  
     else{
         echo 'Sorry No Records Found';
     }
 
-    echo '<a href="view/edit.php?id='.$id.'" class="btn btn-lg btn-danger">Edit</a>';
+    echo '<a href="edit.php?id='.$id.'" class="btn btn-lg btn-danger">Edit</a>';
     include('Template_Footer.php');
 
 ?>

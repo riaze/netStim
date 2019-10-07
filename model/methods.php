@@ -10,7 +10,7 @@ class Methods{
      }
 
     public function Read_Product(){
-        $query = 'SELECT id, title, description, price FROM product_details';
+        $query = 'SELECT id, descrip, Nom_du_produit, price FROM product_details';
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt;
