@@ -28,7 +28,7 @@ include('view/Template_Header.php');
                                 <h5 class="card-title"><?php echo $row['Nom_du_produit'];?></h5>
                                 <p class="card-text"><?php echo $row['descrip']; ?></p>
                                 <p class="card-text"> <b>Prix : $<?php echo $row['price']; ?></b></p>
-                                <a href="view/product.php?id=<?php echo $row['id']; ?>" class="btn btn-primary">More Details</a>
+                                <a href="view/product.php?id=<?php echo $row['id']; ?>" target=_blank class="btn btn-primary">More Details</a>
                                 </div>
                             </div>
                         </div>

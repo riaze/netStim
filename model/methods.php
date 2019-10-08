@@ -21,19 +21,6 @@ class Methods{
         $stmt->execute();
         return $stmt;
     }
-    public function Update_Product(){
-        $query = 'UPDATE product_details SET title = :title, description = :description WHERE id = :id';
-        $stmt = $this->conn->prepare($query);
-
-        //clean data
-        $this->title = htmlspecialchars(strip_tags($this->title));
-        $this->description = htmlspecialchars(strip_tags($this->description));
-        $this->id = htmlspecialchars(strip_tags($this->id));
-        
-        //bind param
-        $stmt->bindParam(':title', $this->title);
-        $stmt->bindParam(':description', $this->description);
-        $stmt->bindParam(':id', $this->id);
-
-    }
+    
 }
+

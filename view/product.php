@@ -72,7 +72,7 @@
         echo 'Sorry No Records Found';
     }
 
-    echo '<a href="edit.php?id='.$id.'" class="btn btn-lg btn-danger">Edit</a>';
+    echo '<a href="edit.php?id='.$id.'" class="btn btn-lg btn-danger" target=_blank>Edit</a>';
     include('Template_Footer.php');
 
 ?>
