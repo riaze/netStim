@@ -33,6 +33,8 @@ class Methods{
         $stmt->execute();    
     }
 }
+    // wiil be execute at time ajax call from index.js
+    
     if(!empty($_POST) && isset($_GET['action']) && $_GET['action'] == 'Update_Product_Details') {
         include_once('../config/database.php');
         $database = new Database();

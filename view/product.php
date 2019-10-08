@@ -8,7 +8,7 @@
     
     $database = new Database();
     $db = $database->connection();
-
+    //getting id value
     $id = $_GET['id'];
     $methods = new methods($db);
     $result = $methods->Read_Full_Details($id);
