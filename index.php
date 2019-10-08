@@ -13,8 +13,7 @@ include('view/Template_Header.php');
 ?>
             <h1 class="display-4">Product</h1>
             <div class="row m-4">
-
-            
+               
             <?php
                 if($num > 0)
                 {
@@ -25,7 +24,7 @@ include('view/Template_Header.php');
                             <div class="card" style="width: 100%; height:100%;">
                             <img class="card-img-top" src="https://fakeimg.pl/300x50/" alt="Card image cap">
                                 <div class="card-body">
-                                <h5 class="card-title"><?php echo $row['Nom_du_produit'];?></h5>
+                                <h5 class="card-title"><?php echo $row['NomDuProduit'];?></h5>
                                 <p class="card-text"><?php echo $row['descrip']; ?></p>
                                 <p class="card-text"> <b>Prix : $<?php echo $row['price']; ?></b></p>
                                 <a href="view/product.php?id=<?php echo $row['id']; ?>" target=_blank class="btn btn-primary">More Details</a>

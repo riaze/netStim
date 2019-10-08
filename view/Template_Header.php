@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="../public/index.js"></script>
-    <link rel="stylesheet" href="../public/index.css">
+    <link rel="stylesheet" href="public/index.css">
     <title>NetSTIM Agence bicéphale - SSII et agence de communication</title>
 </head>
 <body>

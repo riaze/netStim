@@ -28,7 +28,7 @@
                 </tr>
                 <tr>
                     <td>Nom du produit</td>
-                    <td><?php echo $row['Nom_du_produit'];?></td>
+                    <td><?php echo $row['NomDuProduit'];?></td>
                 </tr>
                 <tr>
                     <td>Catégorie</td>
@@ -36,7 +36,7 @@
                 </tr>
                 <tr>
                     <td>Système d&apos;exploitation</td>
-                    <td><?php echo $row['System dexploitation'];?></td>
+                    <td><?php echo $row['system_dexploitation'];?></td>
                 </tr>
                 <tr>
                     <td>Résolution</td>
@@ -52,7 +52,7 @@
                 </tr>
                 <tr>
                     <td>Nombre de coeurs</td>
-                    <td><?php echo $row['Nombre de coeurs'];?></td>
+                    <td><?php echo $row['NombreDeCoeurs'];?></td>
                 </tr>
                 <tr>
                     <td>Poids</td>

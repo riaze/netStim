@@ -3,7 +3,6 @@
     session_start();
     include('Template_Header.php');
     include('../model/methods.php');
-     
     include("../config/database.php");
     
     $database = new Database();
@@ -33,7 +32,7 @@
                  </div>
                  <div class="form-group">
                     <label>Nom du produit</label>
-                    <input type="text"  class="form-control" name = "nom_du_pro" value='<?php echo $row['Nom_du_produit']; ?>'>
+                    <input type="text"  class="form-control" name = "nom_du_pro" value='<?php echo $row['NomDuProduit']; ?>'>
                  </div>
                  <div class="form-group">
                     <label>Catégorie</label>
@@ -41,7 +40,7 @@
                  </div>
                  <div class="form-group">
                     <label>Système d&apos;exploitation</label>
-                    <input type="text" class="form-control" name = "sys" value='<?php echo $row['System dexploitation']; ?>'>
+                    <input type="text" class="form-control" name = "sys" value='<?php echo $row['system_dexploitation']; ?>'>
                  </div>
                  <div class="form-group">
                     <label>Résolution</label>
@@ -57,7 +56,7 @@
                  </div>
                  <div class="form-group">
                     <label>Nombre de coeurs</label>
-                    <input type="text" class="form-control" name = "nomDeCou" value='<?php echo $row['Nombre de coeurs']; ?>'>
+                    <input type="text" class="form-control" name = "nomDeCou" value='<?php echo $row['NombreDeCoeurs']; ?>'>
                  </div>
                  <div class="form-group">
                     <label>Poids</label>
@@ -67,10 +66,12 @@
                     <label>Couleur</label>
                     <input type="text" class="form-control" name = "couleur" value='<?php echo $row['Couleur']; ?>'>
                  </div>
+                 <div id="msg"></div>
                  <div class="form-group">
                      <input type="button" class="btn btn-lg btn-success" id ="save" data-id = '<?php echo $row['id']; ?>'
                      value="Update">
                  </div>
+
              </form>
             
         <?php     
